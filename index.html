@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="series.html">Séries</a>
+                <a href="filmes.html">Filmes</a>
+                <a href="documentarios.html">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <video autoplay loop>
+                    <source src="video/DEMOLIDOR Temporada 3 Trailer Brasileiro DUBLADO (Netflix 2018).mp4"
+                    type="video/mp4">
+                </video>
+                <h3 class="titulo">DEMOLIDOR</h3>
+                <p class="descricao">Cego desde pequeno, Matt Murdock luta contra a injustiça durante o dia como
+                    advogado e à noite nas ruas de Hell’s Kitchen, Nova York.</p>
+                <div class="botoes">
+                    <button role="button" class="botao assistir">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao maisInfo">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <h4 class="titulo-fileira">Populares na Netflix</h4>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <h4 class="titulo-fileira">Games</h4>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/game2.jpg" alt="" srcset="">
+            </div>
+
+            <div class="item">
+                <img class="box-filme" src="img/game7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/game8.png" alt="" srcset="">
+            </div>
+
+        </div>
+    </div>
+
+    <h4 class="titulo-fileira">Animes</h4>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/anime1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/anime2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/anime3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/anime4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/anime5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/anime6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/anime7.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="redes-rodape">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <nav class="info-rodape">
+            <ul>
+                <li><a href="#">Centro de ajuda</a></li>
+
+                <li><a href="#">Impresa</a></li>
+
+                <li><a href="#">Carreiras</a></li>
+            </ul>
+        </nav>
+        <p>&copy 1997-2022 Netflix</p>
+
+    </footer>
+
+    <!-- Modal mais informações  -->
+    <div id="modal-info" class="modal-container">
+        <div class="modal">
+            <img class="img-modal" src="img/capa-demolidor.jpg" alt="">
+            
+            <button class="fechar">X</button>
+            <h3 class="tituloModal">Demolidor</h3>
+            <br>
+                <p class="descricaoModal">Sinopse: Cego desde pequeno, Matt Murdock luta contra a injustiça durante o dia como
+                    advogado e à noite nas ruas de Hell’s Kitchen, Nova York. 
+             <br>  <br>
+            Nome original: Marvel's Daredevil <br>  <br>
+                
+                Situação: Cancelado <br>  <br>
+            
+                Criação: Drew Goddard e Steven S. DeKnight
+            </p>       
+
+        </div>
+
+    </div>
+
+    
+    <!-- Modal Assitir  -->
+    <div id="modal-assistir" class="modal-container">
+        <div class="modalAssistir">           
+            <button class="fechar">X</button>
+            <video muted autoplay controls loop >
+                <source src="video/DEMOLIDOR Temporada 3 Trailer Brasileiro DUBLADO (Netflix 2018).mp4"
+                    type="video/mp4">
+            </video>     
+        </div>
+
+    </div>
+
+    
+    <script src="https://kit.fontawesome.com/783d33c2dd.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/assistir.js"></script>
+
+
+
+</body>
+
+</html>

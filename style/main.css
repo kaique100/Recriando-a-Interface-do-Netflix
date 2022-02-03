@@ -1,0 +1,298 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    display:flex;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 222222;
+    background: #0000007a;
+    margin: auto;
+    transition: .3s ease all;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+
+}
+
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    /* background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-demolidor.jpg'); */
+    background-clip: url('../img/Marvel\ -\ Demolidor.mp4');
+
+    height:400px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filme-principal .container video{
+	position: absolute;
+	width: 98.5vw; 
+	height: 60vh; 
+	z-index: -1000;
+    top: 0;
+    left: 0;
+    object-fit: cover;  
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    /* background: linear-gradient(rgba(0,0,0,.50),rgba(0, 0, 0, 0.829)100%); */
+
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    /* background: linear-gradient(rgba(0,0,0,.50),rgba(0, 0, 0, 0.829)100%); */
+
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border-radius: 3%;
+}
+
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+.titulo-fileira{
+    margin-top:20px;
+
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+
+}
+.redes-rodape ul{
+    display:flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 14%;
+    list-style-type: none;
+    line-height: 2.8;
+}
+.redes-rodape ul li a{ 
+    
+    line-height: 2.8;
+    margin-left: 12%;
+    /* margin-top: 15px; */
+    text-decoration:none;
+    color:#fff;
+   
+    font-size: 20px;
+    /* height: 1px; */
+    margin-right: 60px;
+}
+
+.info-rodape ul li a{
+    line-height: 2.8;
+    /* margin-top: 15px; */
+    margin-left: 15%;
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+}
+footer p{  
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+    /* margin-top: 15px; */
+    text-decoration:none;
+    color:#AAA;
+
+   
+    font-size: 12px;
+    /* height: 1px; */
+}
+
+
+
+
+
+
+/* modal */
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease all;
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+.modal{
+    background: var(--preta);
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    position: relative;
+    /* border: 10px solid; */
+    color: black;
+    justify-content: center;
+    align-items: center;
+
+}
+.modalAssistir{
+    background: var(--preta);
+    width: 60%;
+    min-width: 300px;
+    /* padding: 40px; */
+    position: relative;
+    /* border: 10px solid; */
+    color: black;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modalAssistir video{
+    width: 100%;
+    min-width: 300px;
+    padding: 40px;
+    position: relative;
+}
+
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal{
+    animation: modal .3s;
+}
+
+.fechar{
+    position: absolute;
+    top: -3%;
+    right: -3%;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.img-modal{
+    width: 100%;
+    height: auto;
+}
+
+.tituloModal{
+    margin-top: 2%;
+    font-size: 40px;
+    text-align: center;
+    color: var(--vermelho);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.descricaoModal{
+    color: #AAA;
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+@media screen and (max-width:700px){
+    header .container{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background: #0000007a;
+    /* margin: auto; */
+    width: 100%;
+
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (min-width:1000px){
+        .descricao{
+            width: 50%;
+        }
+        
+        .filme-principal .titulo{
+             margin-right: 50%;
+        }
+        .filme-principal{
+            height: 400px;
+         }
+}
+@media screen and (max-width:1000px){
+    .filme-principal .container video{            
+        width: 100%;     
+    }
+}
+
+@media screen and (max-width:900px){
+    .filme-principal .container video{      
+        height: 40vh; 
+     
+    }
+}
+
+
+@media screen and (max-width:1024px){
+    .filme-principal .container video{      
+        height: 70vh; 
+     
+    }
+}
+
+
+@media screen and (min-width:390px){
+    .filme-principal .container video{      
+        height: 56vh; 
+     
+    }
+}
+
+@media screen and (min-width:540px){
+    .filme-principal .container video{      
+        height: 66vh; 
+     
+    }
+}
+
+@media screen and (max-width:375px){
+        .modal-container {     
+            top: 36px;
+    }
+}
+
+@media screen and (max-width:540px){
+    .modal video{
+        width: 100%;
+        min-width: 300px;
+        padding: 40px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:280px){
+
+    .filme-principal .container video{      
+        height: 70vh !important; 
+     
+    }
+
+    header .container{
+      text-align: center;
+    
+    }
+
+    .botao{
+        margin-top: 2px;
+        width: 211px;
+    }
+
+    .filme-principal .titulo {
+        margin-top: 36%;
+        font-size: 31px;
+    }
+   
+
+    .box-filme{
+        height: 22vh;
+     
+    }
+    .modal-container {     
+        top: 91px;
+    }
+    
+    .modal {    
+        min-width: 215px;
+    }
+
+    .modalAssistir video{
+        width: 80%;
+        min-width: 100px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .modalAssistir{      
+        width: 60%;
+        min-width: 250px;
+        /* padding: 40px; */
+        position: relative;
+        /* border: 10px solid; */
+        color: black;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+}
+
