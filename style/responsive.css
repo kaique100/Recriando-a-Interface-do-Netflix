@@ -27,6 +27,17 @@
         .filme-principal{
             height: 400px;
          }
+
+         .filme-principal .container video {
+           
+            width: 100vw;
+            height: 110vh !important;         
+        
+        }
+
+        .mostrar .modal{
+            width: 40%;
+        }
 }
 @media screen and (max-width:1000px){
     .filme-principal .container video{            
